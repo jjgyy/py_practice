@@ -14,10 +14,12 @@ class Solution(object):
             return None
 
         ptr = head
-        while head.next is not None:
+        ptr2 = head.next
+        head.next = None
+        while ptr2 is not None:
             tmp = ptr
-            ptr = head.next
-            head.next = ptr.next
+            ptr = ptr2
+            ptr2 = ptr.next
             ptr.next = tmp
 
         return ptr
