@@ -16,6 +16,7 @@ class Solution(object):
                 stack.append('}')
                 continue
 
+
             if c == ')':
                 if (len(stack) == 0) or stack[-1] != ')':
                     return False
@@ -34,6 +35,7 @@ class Solution(object):
                 else:
                     stack.pop()
                     continue
+
 
         if len(stack) != 0:
             return False
