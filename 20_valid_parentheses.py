@@ -47,5 +47,5 @@ class Solution(object):
 
 # ========================================================
 solution = Solution()
-s = "[{()}]]"
+s = "([)]"
 print solution.isValid(s)
